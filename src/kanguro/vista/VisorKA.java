@@ -47,12 +47,15 @@ public class VisorKA {
             opcion=menuInicio(sc);
             if (opcion==1){
             //REGISTRA CLIENTE
+            ctrl.newCliente(sc);
             }
             if (opcion==2){
             //REGISTRA EMPLEADO
+            ctrl.newEmpleado(sc);
             }
             if (opcion==3){
             //REGISTRA SERVICIO
+            ctrl.newService(sc);
             }
             if (opcion==4){
                 while(opcion!=5){

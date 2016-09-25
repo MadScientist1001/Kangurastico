@@ -23,6 +23,16 @@ public class Cliente {
         this.listaServi = new ArrayList<>(); 
     }
 
+    public String toString(){
+        String s;
+        int i=1;
+        s="Nombre: "+fullname+" DNI: "+DNI+"\n";
+        while(listaServi.size()<=i){
+            s=s+"Servicio "+i+": "+listaServi.get(i)+"\n";
+            i++;
+        }
+        return s;
+    }
     public ArrayList<Servicio> getListaServi() {
         return listaServi;
     }

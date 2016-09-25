@@ -20,7 +20,11 @@ public class Servicio {
         this.date = date;
         this.valoracion = valoracion;
     }
-
+    public String toString(){
+        String s;
+        s="Fecha "+date+" Valoracion "+valoracion;
+        return s;
+    }
     public Date getDate() {
         return date;
     }

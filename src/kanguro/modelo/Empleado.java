@@ -34,7 +34,19 @@ public class Empleado {
         this.salary = salary;
         this.tutor = tutor;
     }
-
+    public String toString(){
+        String s;
+        if(age>17){
+            s="Nombre: "+fullname+" Edad: "+age+" Direccion: "+poblacion+","+address+" Salario:"+salary;
+        }
+        else{
+            s="Nombre: "+fullname+" Edad: "+age+" Tutor:"+tutor+" Direccion: "+poblacion+","+address+" Salario:"+salary;
+        }
+        return s;
+    }
+    
+    
+    
     public int getAge() {
         return age;
     }
